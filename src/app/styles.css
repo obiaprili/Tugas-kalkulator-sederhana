@@ -1,0 +1,100 @@
+/* styles.css */
+
+/* Reset dasar untuk menghilangkan margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #87CEEB; /* Latar belakang biru langit */
+    color: #001F3F; /* Warna Dark Navy untuk teks */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container untuk kalkulator */
+.container {
+    background-color: #ffffff; /* Latar belakang putih untuk kalkulator */
+    border-radius: 20px; /* Sudut yang lebih bulat */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Bayangan yang lebih dalam */
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+/* Efek hover pada container */
+.container:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Judul kalkulator */
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px; /* Ukuran font yang lebih besar */
+    color: #001F3F; /* Warna Dark Navy untuk judul */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Efek bayangan pada teks */
+}
+
+/* Input dan select */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 15px; /* Padding yang lebih besar */
+    margin: 10px 0;
+    border: 2px solid #001F3F; /* Border Dark Navy */
+    border-radius: 10px; /* Sudut yang lebih bulat */
+    font-size: 18px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi border */
+}
+
+/* Efek fokus pada input dan select */
+input[type="number"]:focus,
+select:focus {
+    border-color: #003366; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+    box-shadow: 0 0 8px rgba(0, 0, 51, 0.5); /* Efek bayangan saat fokus */
+}
+
+/* Tombol */
+button {
+    background-color: #001F3F; /* Warna latar belakang tombol */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px; /* Ukuran font yang lebih besar */
+    transition: background-color 0.3s, transform 0.2s; /* Transisi untuk efek hover */
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #003366; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Hasil kalkulasi */
+h2 {
+    margin-top: 20px;
+    font-size: 24px; /* Ukuran font yang lebih besar */
+    color: #001F3F; /* Warna Dark Navy untuk hasil */
+    font-weight: bold; /* Menebalkan teks hasil */
+    background-color: #f0f8ff; /* Latar belakang hasil */
+    padding: 15px;
+    border-radius: 10px; /* Sudut yang lebih bulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan pada hasil */
+}
+
+/* Responsif */
+@media (max-width: 400px) {
+    .container {
+        width: 90%; /* Lebar responsif untuk perangkat kecil */
+    }
+}
